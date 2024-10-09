@@ -1,4 +1,3 @@
-
 """
 Install libraries for PDF processing, concurrency, and MongoDB integration. These libraries will handle PDF parsing (PyPDF2 or pdfminer.six), database integration (pymongo), and concurrency (concurrent.futures). For natural language processing tasks like summarization and keyword extraction, use nltk or create custom algorithms.
 """
