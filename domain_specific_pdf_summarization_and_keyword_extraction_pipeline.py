@@ -1,10 +1,8 @@
-"""
-Install libraries for PDF processing, concurrency, and MongoDB integration. These libraries will handle PDF parsing (PyPDF2 or pdfminer.six), database integration (pymongo), and concurrency (concurrent.futures). For natural language processing tasks like summarization and keyword extraction, use nltk or create custom algorithms.
-"""
+"""Install libraries for PDF processing, concurrency, and MongoDB integration. These libraries will handle PDF parsing (PyPDF2 or pdfminer.six), database integration (pymongo), and concurrency (concurrent.futures). """
 
 !pip install PyPDF2 pdfminer.six pymongo nltk
 
-""" Connect to MongoDB: Use the connection string to connect to your MongoDB database."""
+""" Connect to MongoDB: Use the connection string to connect with MongoDB database."""
 
 !pip install pymongo
 
@@ -17,9 +15,7 @@ collection = db['pdf_metadata']
 
 print("Connected to MongoDB Atlas!")
 
-""" Creating and Storing PDF Metadata in MongoDB
-
-"""
+""" Creating and Storing PDF Metadata in MongoDB"""
 
 from datetime import datetime
 
@@ -34,7 +30,8 @@ pdf_metadata = {
 
 print("PDF metadata has been successfully created!")
 
-"""# This code is designed to process PDF files in a specified folder, extract text from them, generate summaries, and identify relevant keywords. It then stores this information in a MongoDB database for easy retrieval and analysis."""
+"""# This code is designed to process PDF files in a specified folder, extract text from them, generate summaries, and identify relevant keywords.
+It then stores this information in a MongoDB database for easy retrieval and analysis."""
 
 from datetime import datetime
 import os
